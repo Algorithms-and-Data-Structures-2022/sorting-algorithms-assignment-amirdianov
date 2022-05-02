@@ -27,8 +27,7 @@ namespace assignment {
     //    // слияния двух подмассивов [start, middle] и [middle + 1, stop] ..
     merge_sort(arr, start, middle, buf);
     merge_sort(arr, middle + 1, stop, buf);
-    merge(arr, start, middle_of(start, middle), middle, buf);
-    merge(arr, middle, middle_of(middle + 1, stop), stop, buf);
+    merge(arr, start, middle, stop, buf);
   }
 
 }  // namespace assignment
